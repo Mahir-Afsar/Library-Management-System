@@ -1,0 +1,19 @@
+F:\C#\C# Final term code\Library Management System\Library Management System\bin\Debug\Library Management System.exe.config
+F:\C#\C# Final term code\Library Management System\Library Management System\bin\Debug\Library Management System.exe
+F:\C#\C# Final term code\Library Management System\Library Management System\bin\Debug\Library Management System.pdb
+F:\C#\C# Final term code\Library Management System\Library Management System\obj\Debug\Library_Management_System.Presentation_Layer.AdminFrame.resources
+F:\C#\C# Final term code\Library Management System\Library Management System\obj\Debug\Library_Management_System.Properties.Resources.resources
+F:\C#\C# Final term code\Library Management System\Library Management System\obj\Debug\Library Management System.csproj.GenerateResource.cache
+F:\C#\C# Final term code\Library Management System\Library Management System\obj\Debug\Library Management System.csproj.CoreCompileInputs.cache
+F:\C#\C# Final term code\Library Management System\Library Management System\obj\Debug\Library Management System.exe
+F:\C#\C# Final term code\Library Management System\Library Management System\obj\Debug\Library Management System.pdb
+F:\C#\C# Final term code\Library Management System\Library Management System\obj\Debug\Library_Management_System.Presentation_Layer.BookFrame.resources
+F:\C#\C# Final term code\Library Management System\Library Management System\obj\Debug\Library_Management_System.Presentation_Layer.Login.resources
+F:\C#\C# Final term code\Library Management System\Library Management System\obj\Debug\Library_Management_System.Presentation_Layer.RegistrationFrame.resources
+F:\C#\C# Final term code\Library Management System\Library Management System\obj\Debug\Library_Management_System.Presentation_Layer.AdminDashBoard.resources
+F:\C#\C# Final term code\Library Management System\Library Management System\obj\Debug\Library_Management_System.Presentation_Layer.StudentFrame.resources
+F:\C#\C# Final term code\Library Management System\Library Management System\obj\Debug\Library_Management_System.Presentation_Layer.SearchBookFrame.resources
+F:\C#\C# Final term code\Library Management System\Library Management System\obj\Debug\Library_Management_System.Presentation_Layer.StudentDashBoard.resources
+F:\C#\C# Final term code\Library Management System\Library Management System\obj\Debug\Library_Management_System.Presentation_Layer.LoanListFrame.resources
+F:\C#\C# Final term code\Library Management System\Library Management System\obj\Debug\Library Management System.csproj.AssemblyReference.cache
+F:\C#\C# Final term code\Library Management System\Library Management System\obj\Debug\Library Management System.csproj.SuggestedBindingRedirects.cache

@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1C7925A3-9FDA-4384-9696-4240BDFF7096}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Library_Management_System</RootNamespace>
+    <AssemblyName>Library Management System</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data Access Layer\BookDataAccess.cs" />
+    <Compile Include="Data Access Layer\DatabaseConnection.cs" />
+    <Compile Include="Data Access Layer\Entities\Book.cs" />
+    <Compile Include="Data Access Layer\Entities\LoanList.cs" />
+    <Compile Include="Data Access Layer\Entities\Student.cs" />
+    <Compile Include="Data Access Layer\Entities\User.cs" />
+    <Compile Include="Data Access Layer\LoanListDataAccess.cs" />
+    <Compile Include="Data Access Layer\StudentDataAccess.cs" />
+    <Compile Include="Data Access Layer\UserDataAccess.cs" />
+    <Compile Include="Interface\IBook.cs" />
+    <Compile Include="Interface\ILoanList.cs" />
+    <Compile Include="Interface\IUser.cs" />
+    <Compile Include="Interface\IStudent.cs" />
+    <Compile Include="Presentation Layer\AdminFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\AdminFrame.Designer.cs">
+      <DependentUpon>AdminFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\AdminDashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\AdminDashBoard.Designer.cs">
+      <DependentUpon>AdminDashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\BookFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\BookFrame.Designer.cs">
+      <DependentUpon>BookFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\LoanListFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\LoanListFrame.Designer.cs">
+      <DependentUpon>LoanListFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\RegistrationFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\RegistrationFrame.Designer.cs">
+      <DependentUpon>RegistrationFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\SearchBookFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\SearchBookFrame.Designer.cs">
+      <DependentUpon>SearchBookFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\StudentDashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\StudentDashBoard.Designer.cs">
+      <DependentUpon>StudentDashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation Layer\StudentFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\StudentFrame.Designer.cs">
+      <DependentUpon>StudentFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Presentation Layer\AdminFrame.resx">
+      <DependentUpon>AdminFrame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\AdminDashBoard.resx">
+      <DependentUpon>AdminDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\BookFrame.resx">
+      <DependentUpon>BookFrame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\LoanListFrame.resx">
+      <DependentUpon>LoanListFrame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\RegistrationFrame.resx">
+      <DependentUpon>RegistrationFrame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\SearchBookFrame.resx">
+      <DependentUpon>SearchBookFrame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\StudentDashBoard.resx">
+      <DependentUpon>StudentDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\StudentFrame.resx">
+      <DependentUpon>StudentFrame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stack-books-lying-table-light-wooden-.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookshelve.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
